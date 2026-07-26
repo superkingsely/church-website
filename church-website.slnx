@@ -6,6 +6,8 @@
     <Project Path="src/application/application.csproj" />
     <Project Path="src/infrastructure/infrastructure.csproj" />
     <Project Path="src/shared/shared.csproj" />
+  </Folder>
+  <Folder Name="/test/">
     <Project Path="test/churchwebsite.tests/churchwebsite.tests.csproj"/>
   </Folder>
 </Solution>
