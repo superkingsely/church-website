@@ -206,6 +206,9 @@ feature/api-configuration
 feature/database-foundation
         │
         ▼
+feature/identity-foundation
+        │
+        ▼
 feature/domain-models
         │
         ▼
