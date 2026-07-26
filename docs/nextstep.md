@@ -6,6 +6,24 @@ There are a few pieces of foundation work we should complete first.
 
 ---
 
+# Project Structure
+
+```
+src
+│
+└── api
+    │
+    ├── Controllers
+    ├── Extensions
+    ├── Middlewares
+    ├── Configurations
+    ├── Properties
+    ├── Program.cs
+    └── appsettings.json
+```
+
+---
+
 # Roadmap
 
 ## ✅ Milestone 1 (Completed)
