@@ -9,9 +9,9 @@ public class TestController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> Get()
     {
-        var message=new
+        var message = new
         {
-            message="okay"
+            message = "okay"
         };
 
         return Ok(message);
@@ -19,8 +19,13 @@ public class TestController : ControllerBase
     [HttpGet("string")]
     public string GetString()
     {
-        
+
 
         return "cool";
+    }
+    [HttpGet("error")]
+    public IActionResult Error()
+    {
+        throw new Exception("Testing Global Exception Middleware");
     }
 }

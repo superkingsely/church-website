@@ -14,6 +14,7 @@ public static class GlobalServiceExtention
     public static WebApplication ConfigureAppPipline(this WebApplication app)
     {
         app.UiPipline();
+        app.ConfigureMiddlewarePipline();
         // app.UseHttpsRedirection();
         app.configCorsPipline();
         app.ConfigureApp1Pipline();
