@@ -9,6 +9,7 @@ public static class GlobalServiceExtention
         builder.UiServices();
         builder.ConfigureAppService();
         builder.ConfigCorsServices();
+        builder.Services.AddDatabase(builder.Configuration);
         return builder;
     }
     public static WebApplication ConfigureAppPipline(this WebApplication app)
