@@ -1,13 +1,4 @@
 
-<<<<<<< HEAD
-var builder=WebApplication.CreateBuilder(args);
-
-builder.ConfigureServices();
-
-var app=builder.Build();
-
-app.ConfigureApp();
-=======
 
 var builder=WebApplication.CreateBuilder(args);
 
@@ -16,7 +7,6 @@ builder.Configurservice();
 var app=builder.Build();
 
 app.ConfigureAppPipline();
->>>>>>> feature/api-configuration
 
 app.Run();
 
