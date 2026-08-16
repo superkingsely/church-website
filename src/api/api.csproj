@@ -13,9 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\infrastructure\infrastructure.csproj" />
     <ProjectReference Include="..\shared\shared.csproj" />
-    <ProjectReference Include="..\application\application.csproj" />
   </ItemGroup>
 
 </Project>
