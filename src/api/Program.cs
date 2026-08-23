@@ -2,11 +2,11 @@
 
 var builder=WebApplication.CreateBuilder(args);
 
-builder.Configurservice();
+builder.Configurservices();
 
 var app=builder.Build();
 
-app.ConfigureAppPipline();
+app.ConfigurePiplines();
 
 app.Run();
 
