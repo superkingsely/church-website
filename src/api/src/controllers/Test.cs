@@ -23,9 +23,11 @@ public class TestController : ControllerBase
 
         return "cool";
     }
-    [HttpGet("error")]
-    public IActionResult Error()
-    {
-        throw new Exception("Testing Global Exception Middleware");
-    }
+
+    
+    // [HttpGet("error")]
+    // public IActionResult Error()
+    // {
+    //     // throw new Exception("Testing Global Exception Middleware");
+    // }
 }
