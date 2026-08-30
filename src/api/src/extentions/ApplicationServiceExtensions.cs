@@ -12,6 +12,7 @@ public static class ApplicationServiceExtention
     {
 
         app.MapControllers();
+        app.MapCreateMember();
 
         return app;
     }

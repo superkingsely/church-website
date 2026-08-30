@@ -1,5 +1,6 @@
 
 
+using domain.src.entities;
 using Microsoft.EntityFrameworkCore;
 
 public static class createMemberEndpoint
@@ -7,7 +8,7 @@ public static class createMemberEndpoint
    public static void MapCreateMember(this IEndpointRouteBuilder endpoints)
     {
         endpoints.MapPost("/api/members", async (
-            CreateMemberRequest request,
+            CreateMemberCommand request,
             AppDbContext dbContext,
             CancellationToken cancellationToken) =>
         {
