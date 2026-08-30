@@ -1,6 +1,6 @@
 
 
-// using ChurchWebsite.Domain.Entities;
+using domain.src.entities;
 using Microsoft.EntityFrameworkCore;
 
 public class AppDbContext : DbContext
@@ -9,7 +9,10 @@ public class AppDbContext : DbContext
     {
     }
 
+
+    // obj.Members here prop call
     // public DbSet<Member> Members { get; set; }
-    //  public DbSet<Member> Members => Set<Member>();
+    // here obj.Members() like a method call
+     public DbSet<Member> Members => Set<Member>();
 
 }

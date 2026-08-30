@@ -1,0 +1,1 @@
+dotnet ef migrations add InitialCreate --project src/infrastructure --startup-project src/api --output-dir Persistence/Migrations

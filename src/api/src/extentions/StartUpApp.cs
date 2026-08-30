@@ -10,6 +10,7 @@ public static class StartupApp
         builder.UiServices();
         builder.ConfigureAppService();
         builder.ConfigCorsServices();
+        builder.Services.AddDatabase(builder.Configuration);
         return builder;
     }
 

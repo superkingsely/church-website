@@ -11,7 +11,7 @@ public static class DatabaseDependencyInjection
         var connectionString = configuration.GetConnectionString("DefaultConnection");
         services.AddDbContext<AppDbContext>(options =>
             // options.UseNpgsql(connectionString)
-                configuration.GetConnectionString("DefaultConnection")
+            options.UseSqlite(connectionString)
             );
 
 
