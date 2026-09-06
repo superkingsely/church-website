@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260830131602_init")]
+    [Migration("20260906162601_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -29,6 +29,7 @@ namespace infrastructure.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("CreatedBy")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime?>("DateOfBirth")

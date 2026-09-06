@@ -26,6 +26,7 @@ namespace infrastructure.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("CreatedBy")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime?>("DateOfBirth")
