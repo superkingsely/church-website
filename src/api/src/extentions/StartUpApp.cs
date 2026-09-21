@@ -14,7 +14,7 @@ public static class StartupApp
         builder.ConfigCorsServices();
         builder.Services.AddDatabase(builder.Configuration);
         builder.Services.AddIdentityServices();
-        builder.Services.AddAuth();
+        builder.Services.AddAuth(builder.Configuration);
         //   builder.Services.AddIdentityServices();
         return builder;
     }
@@ -25,6 +25,8 @@ public static class StartupApp
         app.ConfigureMiddlewarePipline();
         // app.UseHttpsRedirection();
         app.configCorsPipline();
+        app.UseAuthentication();
+        app.UseAuthorization();
         app.ConfigureApp1Pipline();
         return app;
     }
