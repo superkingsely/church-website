@@ -14,6 +14,7 @@ public static class StartupApp
         builder.ConfigCorsServices();
         builder.Services.AddDatabase(builder.Configuration);
         builder.Services.AddIdentityServices();
+        builder.Services.AddAuth();
         //   builder.Services.AddIdentityServices();
         return builder;
     }
