@@ -2,6 +2,8 @@
 
 
 
+using Infrastructure.Identity;
+
 public static class StartupApp
 {
     public static WebApplicationBuilder Configurservices(this WebApplicationBuilder builder)
@@ -11,6 +13,8 @@ public static class StartupApp
         builder.ConfigureAppService();
         builder.ConfigCorsServices();
         builder.Services.AddDatabase(builder.Configuration);
+        builder.Services.AddIdentityServices();
+        //   builder.Services.AddIdentityServices();
         return builder;
     }
 
