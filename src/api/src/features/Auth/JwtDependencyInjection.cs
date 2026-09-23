@@ -37,6 +37,7 @@ public static class JwtDependencyInjection
         services.AddAuthorization();
         // -----------------------------
         // Bind appsettings.json "Jwt" section to JwtOptions
+        // IOptions<JwtOptions> originate from here
         services.Configure<JwtOptions>(
     configuration.GetSection(JwtOptions.SectionName));
 
