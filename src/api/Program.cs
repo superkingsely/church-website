@@ -1,10 +1,14 @@
 
 
+using Authentication;
+
 var builder=WebApplication.CreateBuilder(args);
 
 builder.Configurservices();
 
 var app=builder.Build();
+
+await app.SeedIdentityAsync();
 
 app.ConfigurePiplines();
 

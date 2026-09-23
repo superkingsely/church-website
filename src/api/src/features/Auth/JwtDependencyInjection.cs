@@ -35,6 +35,13 @@ public static class JwtDependencyInjection
             });
 
         services.AddAuthorization();
+        // -----------------------------
+        // Bind appsettings.json "Jwt" section to JwtOptions
+        services.Configure<JwtOptions>(
+    configuration.GetSection(JwtOptions.SectionName));
+
+        services.AddScoped<JwtTokenGenerator>();
+        services.AddScoped<LoginHandler>();
 
         return services;
     }

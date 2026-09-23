@@ -28,6 +28,6 @@ public static class createMemberEndpoint
             return Results.Created(
                 $"/api/members/{member.Id}",
                 member);
-        });
+        }).RequireAuthorization();
     }
 }

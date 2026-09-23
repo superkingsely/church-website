@@ -27,7 +27,9 @@ public static class StartupApp
         app.configCorsPipline();
         app.UseAuthentication();
         app.UseAuthorization();
+        app.MapLoginEndpoint();
         app.ConfigureApp1Pipline();
+
         return app;
     }
 }
